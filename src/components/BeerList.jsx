@@ -25,7 +25,6 @@ function BeerList() {
       {beers.map((beer) => (
         <Card key={beer.id} beers={beer} />
       ))}
-
     </div>
   )
 }

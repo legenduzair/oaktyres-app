@@ -11,9 +11,10 @@ function BeerSearch() {
     if(searchBeer === '') {
         alert('Please enter something', 'error')
     } else {
-        setSearchBeer('')
+      alert('Hello')
+      setSearchBeer()
     }
-}
+  }
 
   return (
     <div className='m-8'>
