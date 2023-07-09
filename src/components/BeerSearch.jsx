@@ -24,9 +24,6 @@ function BeerSearch({ onSearch }) {
               <input type="text" className='w-96 pr-40 bg-gray-200 input input-lg text-black border-slate-600' placeholder="Search" value={searchBeer} onChange={handleChange}/>
             </div>
           </div>
-          <button type="submit" className="btn btn-primary mt-2">
-            Search
-          </button>
         </form>
       </div>
     </div>
