@@ -5,7 +5,7 @@ import axios from "axios"
 function BeerList() {
   const [beers, setBeers] = useState([]);
 
-  const url = 'https://api.punkapi.com/v2/beers?page=3&per_page=8';
+  const url = 'https://api.punkapi.com/v2/beers?page=3&per_page=40';
 
   useEffect(() => {
     const getBeers = async () => {
