@@ -28,7 +28,7 @@ function BeerList({ searchTerm }) {
   }, [searchTerm])
 
   return (
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4">
       {beers.map((beer) => (
         <Card key={beer.id} beers={beer} />
       ))}
