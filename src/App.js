@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "./layout/Header";
 import BeerList from "./components/BeerList";
 import BeerSearch from "./components/BeerSearch";
@@ -12,7 +13,7 @@ function App() {
     <>
       <Header />
       <BeerSearch onSearch={handleSearch}/>
-      <BeerList />
+      <BeerList searchTerm={searchTerm}/>
     </>
   );
 }
