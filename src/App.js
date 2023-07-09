@@ -1,9 +1,14 @@
+import Header from "./layout/Header";
+import BeerList from "./components/BeerList";
+import BeerSearch from "./components/BeerSearch";
 
 function App() {
   return (
-    <div className="bg-sky-700 text-center">
-      <h2 className="text-black p-8 font-bold text-xl">Oaktyres Test</h2>
-    </div>
+    <>
+      <Header />
+      <BeerSearch />
+      <BeerList />
+    </>
   );
 }
 
