@@ -23,7 +23,7 @@ function BeerList() {
   return (
     <div class="grid grid-cols-4 gap-4">
       {beers.map((beer) => (
-        <Card key={beer.id} />
+        <Card key={beer.id} beers={beer} />
       ))}
 
     </div>
