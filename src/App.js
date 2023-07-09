@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <BeerSearch />
+      <BeerSearch onSearch={handleSearch}/>
       <BeerList />
     </>
   );

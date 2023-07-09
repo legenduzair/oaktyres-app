@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function BeerSearch() {
+function BeerSearch({ onSearch }) {
   const [searchBeer, setSearchBeer] = useState('');
 
   const handleChange = (e) => setSearchBeer(e.target.value)
@@ -8,11 +8,10 @@ function BeerSearch() {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    if(searchBeer === '') {
-        alert('Please enter something', 'error')
+    if (searchBeer.trim() === "") {
+      alert("Please enter a beer name");
     } else {
-      alert('Hello')
-      setSearchBeer()
+      onSearch(searchBeer);
     }
   }
 
@@ -25,6 +24,9 @@ function BeerSearch() {
               <input type="text" className='w-96 pr-40 bg-gray-200 input input-lg text-black border-slate-600' placeholder="Search" value={searchBeer} onChange={handleChange}/>
             </div>
           </div>
+          <button type="submit" className="btn btn-primary mt-2">
+            Search
+          </button>
         </form>
       </div>
     </div>
